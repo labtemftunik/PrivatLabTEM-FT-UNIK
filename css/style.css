@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+
+/* ===============================
+   LOGIN
+   =============================== */
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-icon {
+    font-size: 55px;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.login-card h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+
+/* ===============================
+   HOME
+   =============================== */
+
+.home-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.menu-home {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.menu-card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.menu-card > i {
+    font-size: 50px;
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+.menu-card h4 {
+    margin-bottom: 15px;
+}
+
+.menu-card p {
+    color: #6c757d;
+}
+
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+
+@media (max-width: 768px) {
+
+    .menu-home {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================================
+PINJAM ALAT
+========================================= */
+
+.pinjam-alat-container {
+max-width: 1000px;
+margin: 0 auto;
+padding: 50px 20px;
+}
+
+.page-header {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.page-header h2 {
+font-weight: 700;
+margin-bottom: 8px;
+}
+
+.page-header p {
+margin-bottom: 0;
+}
+
+/* =========================================
+SECTION
+========================================= */
+
+.pinjam-section {
+background: #ffffff;
+border-radius: 15px;
+padding: 25px;
+margin-bottom: 30px;
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 20px;
+margin-bottom: 20px;
+padding-bottom: 15px;
+border-bottom: 1px solid #e9ecef;
+}
+
+.section-header h3 {
+margin: 0 0 5px;
+font-size: 22px;
+font-weight: 700;
+}
+
+.section-header p {
+margin: 0;
+color: #6c757d;
+}
+
+/* =========================================
+JUMLAH DATA
+========================================= */
+
+.section-badge {
+min-width: 38px;
+height: 38px;
+padding: 0 10px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+border-radius: 50%;
+
+background: #0d6efd;
+color: white;
+
+font-weight: 700;
+
+}
+
+/* =========================================
+CARD PEMINJAMAN
+========================================= */
+
+.pinjam-card {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 25px;
+
+padding: 20px;
+
+margin-bottom: 15px;
+
+border: 1px solid #e9ecef;
+border-radius: 12px;
+
+background: #ffffff;
+
+}
+
+.pinjam-card {
+margin-bottom: 0;
+}
+
+.pinjam-card-content {
+flex: 1;
+}
+
+.pinjam-card-content h4 {
+margin: 0 0 12px;
+
+font-size: 19px;
+font-weight: 700;
+
+}
+
+.pinjam-card-content p {
+margin: 5px 0;
+
+color: #555;
+
+}
+
+.pinjam-card-content strong {
+color: #212529;
+}
+
+.pinjam-card-action {
+flex-shrink: 0;
+}
+
+.pinjam-card-action .btn {
+white-space: nowrap;
+}
+
+/* =========================================
+LOADING & DATA KOSONG
+========================================= */
+
+.loading-data,
+.empty-data {
+text-align: center;
+padding: 35px 20px;
+color: #6c757d;
+}
+
+.loading-data i,
+.empty-data i {
+display: block;
+font-size: 35px;
+margin-bottom: 10px;
+}
+
+.loading-data p,
+.empty-data p {
+margin: 0;
+}
+
+/* =========================================
+TOMBOL KEMBALI
+========================================= */
+
+.back-home {
+text-align: center;
+margin-top: 35px;
+}
+
+/* =========================================
+RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+.pinjam-alat-container {
+    padding: 35px 15px;
+}
+
+.pinjam-section {
+    padding: 20px;
+}
+
+.section-header {
+    align-items: flex-start;
+}
+
+.pinjam-card {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.pinjam-card-action {
+    width: 100%;
+}
+
+.pinjam-card-action .btn {
+    width: 100%;
+}
+
+}

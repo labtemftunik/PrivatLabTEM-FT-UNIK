@@ -1,0 +1,133 @@
+<div class="pinjam-alat-container">
+
+<div class="page-header">
+    <h2>Konfirmasi Pinjam Alat</h2>
+    <p class="text-muted">
+        Kelola pengajuan dan pengembalian alat laboratorium.
+    </p>
+</div>
+
+
+<!-- =========================================
+     PEMINJAMAN MENUNGGU
+     ========================================= -->
+
+<section class="pinjam-section">
+
+    <div class="section-header">
+        <div>
+            <h3>Peminjaman Menunggu</h3>
+            <p>
+                Pengajuan peminjaman yang belum dikonfirmasi.
+            </p>
+        </div>
+
+        <span class="section-badge" id="jumlahMenunggu">
+            0
+        </span>
+    </div>
+
+
+    <div id="daftarMenunggu">
+
+        <div class="loading-data">
+            <i class="bi bi-hourglass-split"></i>
+            <p>Memuat data...</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     ALAT SEDANG DIPINJAM
+     ========================================= -->
+
+<section class="pinjam-section">
+
+    <div class="section-header">
+        <div>
+            <h3>Alat Sedang Dipinjam</h3>
+            <p>
+                Daftar alat yang saat ini sedang digunakan.
+            </p>
+        </div>
+
+        <span class="section-badge" id="jumlahDipinjam">
+            0
+        </span>
+    </div>
+
+
+    <div id="daftarDipinjam">
+
+        <div class="loading-data">
+            <i class="bi bi-hourglass-split"></i>
+            <p>Memuat data...</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================
+     KEMBALI KE HOME
+     ========================================= -->
+
+<div class="back-home">
+
+    <button
+        class="btn btn-secondary"
+        onclick="location.hash='#home'"
+    >
+        <i class="bi bi-arrow-left"></i>
+        Kembali
+    </button>
+
+</div>
+
+<!-- MODAL PROSES -->
+<div class="modal fade" id="modalProses" tabindex="-1"
+    data-bs-backdrop="static" data-bs-keyboard="false">
+
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+
+            <div class="modal-body p-4">
+
+                <div id="loadingProses">
+
+                    <div class="spinner-border text-primary mb-3"
+                        role="status">
+                    </div>
+
+                    <h5>Memproses...</h5>
+
+                    <p class="text-muted mb-0">
+                        Mohon tunggu sebentar.
+                    </p>
+
+                </div>
+
+
+                <div id="suksesProses" style="display:none;">
+
+                    <i class="bi bi-check-circle-fill text-success"
+                        style="font-size:50px;">
+                    </i>
+
+                    <h5 id="pesanSukses" class="mt-3">
+                        Berhasil
+                    </h5>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
